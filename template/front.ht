@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Trivium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://chneukirchen.org/trivium/index.atom">
+  </head>
+  <body>
+
+<div class="hfeed">
+<h1><a href="./"><img src="trivium.png" alt="Trivium"></a></h1>
+
+<small class="top nav">
+  $ if self[:entries].last[:prev_by_month]
+<a class="prev" href="${self[:entries].last[:prev_by_month]}">&#xab; Previously</a>
+$ end
+</small>
+
+$ self[:entries].each { |entry|
+
+<div class="hentry">
+<h2 class="entry-title">
+  <a href="${entry[:id]}" rel="bookmark">
+    <abbr class="published" title="${entry[:date].iso8601}">
+      ${entry[:title]}
+    </abbr>
+  </a>
+</h2>
+<div class="entry-content">
+$:{format entry}
+</div>
+</div>
+
+$ }
+
+<small class="bot nav">
+  $ if self[:entries].last[:prev_by_month]
+<a class="prev" href="${self[:entries].last[:prev_by_month]}">&#xab; Previously</a>
+$ end
+</small>
+
+<address class="author vcard">
+Copyright &#169; 2008 <a class="email fn" href="mailto:chneukirchen@gmail.com">Christian Neukirchen</a>
+</address>
+
+</div>
+</body>
+</html>

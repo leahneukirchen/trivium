@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Trivium: grammar, logic, rhetoric</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+<div class="main">
+<div class="wrapper">
+<h1><span class="title">
+<a href="./">Trivium: grammar, logic, rhetoric</a></span>
+<span class="author">by
+<a href="http://chneukirchen.org/">Christian Neukirchen</a></span></h1>
+
+$ self[:entries].each { |entry|
+
+<h2>
+$# class="entry-title">
+  <a href="${entry[:id]}" rel="bookmark">
+    <abbr class="published" title="${entry[:date].iso8601}">
+      ${entry[:title]}
+    </abbr>
+  </a>
+</h2>
+
+$ }
+
+<address class="author vcard">
+Copyright &#169; 2008 <a class="email fn" href="mailto:chneukirchen@gmail.com">Christian Neukirchen</a>
+</address>
+
+</div>
+</div>
+</body>
+</html>

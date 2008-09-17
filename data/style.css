@@ -1,0 +1,155 @@
+body {
+  font: 12px/16px Helvetica, Arial, sans-serif;
+  width: 40em;
+  margin: 2.5em 3em;
+  position: relative;
+}
+
+
+h1 {
+  width: 141px;
+  height: 64px;
+  margin: 0;
+  padding: 0 0 8px 0;
+}
+
+h2 {
+  font: 26px/16px Helvetica, Arial, sans-serif;
+  margin: 0 2px 0 -2px;
+  letter-spacing: -1.5px;
+  display: inline;
+  position: relative;
+}
+
+h3 {
+  font: 12px/16px Helvetica, Arial, sans-serif;
+  display: inline;
+  font-weight: bold;
+}
+
+
+h2 a, address a {
+  color: black;
+  text-decoration: none;
+}
+
+h2 abbr {
+  border: none;
+  text-decoration: none;
+}
+
+.entry-content a, .nav a, .all {
+  text-decoration: none;
+  xcolor: #cade0d;
+  color: #69CE0D;
+  background-color: #EBFBCF;
+  padding: 0px 1px;
+}
+
+.entry-content a:hover, .nav a:hover, .all:hover, address a:hover {
+  text-decoration: underline;
+}
+
+
+.hentry {
+  margin-top: 12px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.entry-content {
+  display: inline;
+}
+
+.entry-content > p + p {
+  text-indent: 1em;
+}
+
+.entry-content p:first-child,
+h3 + p {
+  display: inline;
+}
+
+.entry-content > p + h3 {
+  margin-left: 1em;
+}
+
+address {
+  text-align: right;
+  margin: 3em 0;
+  font-size: 11px;
+}
+
+
+.quick p:first-child {
+  margin-left: 1em;
+}
+
+.quick p {
+  display: inline;
+}
+
+.quick p + p:before {
+  content: "\2215";
+  padding: 0 0.75em 0 0.5em;  
+}
+
+
+blockquote {
+  font-style: italic;
+  margin-left: 1em;
+}
+
+blockquote .source {
+  display: block;
+  margin-left: 2em;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+img {
+  border: none;
+}
+
+pre {
+  margin-left: 1em;
+  font-size: 11px;
+}
+
+
+img.inline-math {
+  position: relative;
+  top: 5px;
+  margin-top: -100px;
+}
+
+.math {
+  text-align: center;
+  margin: 0.5em 0em;
+}
+
+
+.nav {
+  font-size: 12px;
+  display: block;
+}
+
+.top.nav {
+  position: absolute;
+  right: 0;
+  top: 35px;
+}
+
+.bot.nav {
+  text-align: right;
+  margin: 2em 0 -1.5em 0;
+}
+
+.nav a {
+  margin-left: 0.5em;
+  padding: 2px 4px;
+}
