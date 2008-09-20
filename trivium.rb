@@ -137,7 +137,7 @@ monthly.each { |month, entries|
   end
 }
 
-front = ENTRIES.first(2)  #(10)
+front = ENTRIES.first(10)
 d = front.map { |e| e[:file] }
 dep "html/index.html", "template/front.ht", *d do |dst|
   File.write(dst, template("template/front.ht", :entries => front, :next => monthly.last))
