@@ -69,6 +69,7 @@ p {
 }
 
 .entry-content p:first-child,
+.entry-content .quick:first-child,
 h3 + p {
   display: inline;
 }
@@ -84,7 +85,7 @@ address {
 }
 
 
-.quick p:first-child {
+p + .quick p:first-child {
   margin-left: 1em;
 }
 
