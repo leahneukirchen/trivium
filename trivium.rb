@@ -69,7 +69,9 @@ class Dots < String
         else
           src = %{<span class="source">&#x2014; #{args.strip}</span>}
         end
-        %{<div class="quote">#{BlueCloth.new((body + src).gsub(/^.*$/, '> \&  ')).to_html}</div>}
+        text = (body + src).gsub(/^ +/) { "&#x2002;" * $&.size }.
+                            gsub(/^.*$/, '> \&  ')
+        %{<div class="quote">#{BlueCloth.new(text).to_html}</div>}
       when "math"
         body << "\\eqno{#{args.strip}}"  unless args.strip.empty?
         %{<div class="math"><img alt="#{CGI.escapeHTML body}" src="#{MATH_TEX}#{CGI.escape(body).gsub('+', '%20')}"></div>}
