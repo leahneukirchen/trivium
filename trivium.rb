@@ -18,7 +18,7 @@ end
 def parse(f)
   head, body = File.read(f).split("\n\n", 2)  rescue (return nil)
   entry = {:body => body, :id => File.basename(f, ".entry"), :file => f}
-  head.scan(/(\w+):\s*(.*)/) { entry[$1.downcase.to_sym] = $2 }
+  head.scan(/(\w+): *(.*)/) { entry[$1.downcase.to_sym] = $2 }
   entry[:date] = Time.parse(entry[:date])  if entry[:date]
   entry[:title] = entry[:date].strftime("%d%b%Y").downcase  if entry[:date]
   entry
