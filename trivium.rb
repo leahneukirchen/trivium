@@ -41,7 +41,8 @@ end
 
 class InlineMath < String
   MATH_TEX = 'http://vuxu.org/~chris/mathtex/mathtex.cgi?' +
-    CGI.escape('\textstyle{}\usepackage{color}\color{white}\rule[-0.333em]{0.01pt}{1.2em}\color{black}')
+    CGI.escape('\textstyle{}\usepackage{color}' +
+               '\color{white}\rule[-0.333em]{0.01pt}{1.2em}\color{black}')
   
   def to_html
     gsub(/\$(.*?)\$/) {
@@ -61,8 +62,8 @@ class Dots < String
       case name
       when "link"
         title, desc = body.split("|", 2)
-        # why does bluecloth need those div?
-        %{<p class="link"><span><a href="#{args.strip}">#{title.strip}</a>#{SpanBlueCloth.new(desc).to_html}</span></p>}
+        %{<p class="link"><span><a href="#{args.strip}">#{title.strip}</a>#{
+          SpanBlueCloth.new(desc).to_html}</span></p>}
       when "quote"
         if args.strip.empty?
           src = ""
@@ -74,9 +75,11 @@ class Dots < String
         %{<div class="quote">#{BlueCloth.new(text).to_html}</div>}
       when "math"
         body << "\\eqno{#{args.strip}}"  unless args.strip.empty?
-        %{<div class="math"><img alt="#{CGI.escapeHTML body}" src="#{MATH_TEX}#{CGI.escape(body).gsub('+', '%20')}"></div>}
+        %{<div class="math"><img alt="#{CGI.escapeHTML body}" src="#{
+          MATH_TEX}#{CGI.escape(body).gsub('+', '%20')}"></div>}
       else
-        %{<div class="#{name}">#{BlueCloth.new(Dots.new(body).to_html).to_html}</div>}
+        %{<div class="#{name}">#{
+          BlueCloth.new(Dots.new(body).to_html).to_html}</div>}
       end
     }
   end
@@ -139,14 +142,16 @@ chain(monthly, "month")
 monthly.each { |month, entries|
   entry = entries.first
   dep "html/#{month}.html", "template/monthly.ht", *deps(entry) do |dst|
-    File.write(dst, template("template/monthly.ht", :entries => entries, :month => month))
+    File.write(dst, template("template/monthly.ht",
+                             :entries => entries, :month => month))
   end
 }
 
 front = ENTRIES.first(10)
 d = front.map { |e| e[:file] }
 dep "html/index.html", "template/front.ht", *d do |dst|
-  File.write(dst, template("template/front.ht", :entries => front, :next => monthly.last))
+  File.write(dst, template("template/front.ht",
+                           :entries => front, :next => monthly.last))
 end
 
 feed = ENTRIES.first(20)
