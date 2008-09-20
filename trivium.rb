@@ -33,6 +33,10 @@ class SpanBlueCloth < BlueCloth
   def apply_block_transforms(text, rs)
     text                        # we don't do blocks
   end
+
+  def to_html
+    super.strip
+  end
 end
 
 class InlineMath < String
