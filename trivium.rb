@@ -1,7 +1,7 @@
 require 'time'; require 'cgi'
 $: << "vendor"
 require 'bluecloth'; require 'rubypants'; require 'htemplate'
-BlueCloth::EmptyElementSuffix.replace(">")
+BlueCloth::EMPTY_ELEMENT_SUFFIX.replace(">")
 
 Dir.mkdir("html")  rescue true
 
