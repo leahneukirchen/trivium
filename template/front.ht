@@ -12,7 +12,8 @@
 <h1><a href="./"><img src="trivium.png" alt="Trivium"></a></h1>
 
 <small class="top nav">
-  $ if self[:entries].last[:prev_by_month]
+<a href="intro">Intro</a>
+$ if self[:entries].last[:prev_by_month]
 <a class="prev" href="${self[:entries].last[:prev_by_month]}">&#xab; Previously</a>
 $ end
 </small>
@@ -40,8 +41,9 @@ $ }
 $ end
 </small>
 
-<address class="author vcard">
-Copyright &#169; 2008 <a class="email fn" href="mailto:chneukirchen@gmail.com">Christian Neukirchen</a>
+<address class="author vcard"
+  title="If you copy the content of this site to poison search engines, fuck off.">
+Copyright &#169; 2008 <a class="email fn" href="mailto:chneukirchen@gmail.com">Christian Neukirchen</a><br>
 </address>
 
 </div>

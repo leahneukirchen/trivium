@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title type="text">Trivium: grammar, logic, rhetoric</title>
+  <title type="text">Trivium</title>
   <link rel="alternate" type="text/html"
 	href="http://chneukirchen.org/trivium/" />
   <link rel="self" href="http://chneukirchen.org/trivium/index.atom" />
@@ -10,7 +10,7 @@
     <email>chneukirchen@gmail.com</email>
   </author>
   <id>tag:chneukirchen.org,2008:trivium-feed</id>
-  <generator version="0.1">trivium.rb</generator>
+  <generator version="2.0">trivium.rb</generator>
   <rights type="xhtml">
   <div xmlns="http://www.w3.org/1999/xhtml">
   Copyright © 2008 Christian Neukirchen, chneukirchen@gmail.com
