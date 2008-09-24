@@ -77,6 +77,11 @@ class Dots < String
         body << "\\eqno{#{args.strip}}"  unless args.strip.empty?
         %{<div class="math"><img alt="#{CGI.escapeHTML body}" src="#{
           MATH_TEX}#{CGI.escape(body).gsub('+', '%20')}"></div>}
+      when "thumb"
+        '<div class="thumbs">' + body.split(/\n{2,}/).map { |para|
+          alt, thumb, img = para.strip.split("\n", 3)
+          %{<a class="thumb" href="#{img}"><img src="#{thumb}" alt="#{alt}"></a>}
+        }.join("\n") + '</div>'
       else
         %{<div class="#{name}">#{
           BlueCloth.new(Dots.new(body).to_html).to_html}</div>}

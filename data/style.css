@@ -136,6 +136,22 @@ img.inline-math {
 }
 
 
+.thumbs a {
+  background-color: #ffffff;
+  outline: none;
+}
+
+.thumb img {
+  width: 220px;
+  margin: 8px 8px 0 0;
+}
+
+.thumb img.full {
+  width: 454px;
+  margin: 8px 0 0 0;
+}
+
+
 .nav {
   font-size: 12px;
   display: block;
