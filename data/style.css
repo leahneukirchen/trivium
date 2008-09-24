@@ -3,6 +3,8 @@ body {
   width: 40em;
   margin: 2.5em 3em;
   position: relative;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 
@@ -14,7 +16,7 @@ h1 {
 }
 
 h2 {
-  font: 26px/16px Helvetica, Arial, sans-serif;
+  font: 24px/16px Helvetica, Arial, sans-serif;
   margin: 0 2px 0 -2px;
   letter-spacing: -1.5px;
   display: inline;
@@ -64,7 +66,7 @@ p {
   display: inline;
 }
 
-.entry-content > p + p {
+.entry-content > p {
   text-indent: 1em;
 }
 
