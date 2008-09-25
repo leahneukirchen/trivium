@@ -76,8 +76,12 @@ h3 + p {
   display: inline;
 }
 
-.entry-content > p + h3 {
+.entry-content > h3 {
   margin-left: 1em;
+}
+
+.entry-content > h3:first-child {
+  margin-left: 0;
 }
 
 address {
