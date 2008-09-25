@@ -91,12 +91,9 @@ class Dots < String
 end
 
 def format(e)
-  RubyPants.new(
-  BlueCloth.new(
-  Dots.new(
-  InlineMath.new(
-    e[:body]
-  ).to_html).to_html).to_html).to_html
+  [InlineMath, Dots, BlueCloth, RubyPants].inject(e[:body]) { |a,e|
+    e.new(a).to_html
+  }
 end
 
 def template(template, data)
