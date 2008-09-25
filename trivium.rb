@@ -62,8 +62,8 @@ class Dots < String
       case name
       when "link"
         title, desc = body.split("|", 2)
-        %{<p class="link"><span><a href="#{args.strip}">#{title.strip}</a>#{
-          SpanBlueCloth.new(desc.to_s).to_html}</span></p>}
+        %{<p class="link"><span><a href="#{CGI.escapeHTML(args.strip)}">#{
+          title.strip}</a>#{SpanBlueCloth.new(desc.to_s).to_html}</span></p>}
       when "quote"
         if args.strip.empty?
           src = ""
