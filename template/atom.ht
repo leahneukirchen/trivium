@@ -29,8 +29,8 @@ $ self[:entries].each { |entry|
     <link rel="alternate" type="text/html"
 	  href="http://chneukirchen.org/trivium/${entry[:id]}" />
     <id>tag:chneukirchen.org,2008:trivium-${entry[:id]}</id>
-    <updated>${entry[:date].iso8601}</updated>
-    <published>${self[:time].iso8601}</published>
+    <updated>${entry[:updated].iso8601}</updated>
+    <published>${entry[:date].iso8601}</published>
     <content type="html">
 ${format(entry)}
     </content>
