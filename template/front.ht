@@ -13,6 +13,7 @@
 
 <small class="top nav">
 <a href="intro">Intro</a>
+<a href="index.atom">Subscribe</a>
 $ if self[:entries].last[:prev_by_month]
 <a class="prev" href="${self[:entries].last[:prev_by_month]}">&#xab; Previously</a>
 $ end
