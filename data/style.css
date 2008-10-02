@@ -65,7 +65,8 @@ p {
   display: inline;
 }
 
-.entry-content > p {
+.entry-content > p,
+.quick {
   text-indent: 1em;
 }
 
@@ -90,10 +91,6 @@ address {
   font-size: 11px;
 }
 
-
-p + .quick p:first-child {
-  margin-left: 1em;
-}
 
 .quick p {
   display: inline;
