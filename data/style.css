@@ -57,7 +57,7 @@ h2 abbr {
 }
 
 p {
-  margin: 0;
+  margin: 4px 0;
   padding: 0;
 }
 
@@ -118,16 +118,12 @@ blockquote .source {
   font-size: 11px;
 }
 
-blockquote p {
-  margin: 8px 0;
-}
-
 img {
   border: none;
 }
 
 pre {
-  margin: 8px 0 8px 1em;
+  margin: 4px 0 4px 1em;
   font-size: 11px;
 }
 
