@@ -5,6 +5,7 @@
     <title>Trivium</title>
     <link rel="stylesheet" href="style.css">
     <link rel="alternate" type="application/atom+xml" title="Atom" href="http://chneukirchen.org/trivium/index.atom">
+    <link rel="up" href="http://chneukirchen.org/">
   </head>
   <body>
 

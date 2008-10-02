@@ -9,6 +9,7 @@ $ end
 $ if self[:next_by_date]
     <link rel="next" href="${self[:next_by_date]}">
 $ end
+    <link rel="up" href="${self[:date].strftime("%Y-%m")}">
     <link rel="stylesheet" href="style.css">
     <link rel="alternate" type="application/atom+xml" title="Atom" href="http://chneukirchen.org/trivium/index.atom">
   </head>
@@ -21,7 +22,7 @@ $ end
 $ if l=Entry[self[:prev_by_date]]
 <a class="prev" href="${l[:id]}">&#xab; ${l[:title]}</a>
 $ end
-
+<a class="month" href="${self[:date].strftime("%Y-%m")}">${self[:date].strftime("%B %Y")}</a>
 $ if l=Entry[self[:next_by_date]]
 <a class="next" href="${l[:id]}">${l[:title]} &#xbb;</a>
 $ end

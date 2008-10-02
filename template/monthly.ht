@@ -9,6 +9,7 @@ $ end
 $ if self[:entries].first[:next_by_month]
     <link rel="next" href="${self[:entries].first[:next_by_month]}">
 $ end
+    <link rel="up" href="./">
     <link rel="stylesheet" href="style.css">
     <link rel="alternate" type="application/atom+xml" title="Atom" href="http://chneukirchen.org/trivium/index.atom">
   </head>
