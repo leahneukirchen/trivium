@@ -164,9 +164,4 @@ dep "html/index.atom", "template/atom.ht", *d do |dst|
                            :entries => feed, :time => Time.now))
 end
 
-d = ENTRIES.map { |e| e[:file] }
-dep "html/all.html", "template/all.ht", *d do |dst|
-  File.write(dst, template("template/all.ht", :entries => ENTRIES))
-end
-
 system "rsync -r data/ html"
