@@ -36,9 +36,7 @@ $:{format entry}
 $ }
 
 <small class="bot nav">
-  $ if self[:entries].last[:prev_by_month]
-<a class="prev" href="${self[:entries].last[:prev_by_month]}">&#xab; Previously</a>
-$ end
+<a class="prev" href="${self[:entries].last[:date].strftime("%Y-%m")}">&#xab; Previously</a>
 </small>
 
 <address class="author vcard"
