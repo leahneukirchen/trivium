@@ -36,7 +36,7 @@ class SpanBlueCloth < BlueCloth
   end
 
   def to_html
-    super.strip
+    super.rstrip
   end
 end
 
