@@ -31,9 +31,8 @@ ENTRIES = Dir.glob("entries/*.entry").map { |x| Entry[x] }.
 Entry.values.each { |v| Entry[v[:id]] = v }
 
 class SpanBlueCloth < BlueCloth
-  def apply_block_transforms(text, rs)
-    text                        # we don't do blocks
-  end
+  # Don't do block transforms.
+  alias apply_block_transforms apply_span_transforms
 
   def to_html
     super.rstrip
