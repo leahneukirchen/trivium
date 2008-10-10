@@ -40,7 +40,7 @@ h2 abbr {
   text-decoration: none;
 }
 
-.entry-content a, .nav a, .all {
+.entry-content a, .nav a {
   text-decoration: none;
   color: #69CE0D;
   background-color: #EBFBCF;
@@ -49,6 +49,14 @@ h2 abbr {
 
 .entry-content a:hover, .nav a:hover, .all:hover, address a:hover {
   text-decoration: underline;
+}
+
+.entry-content a:visited {
+  color: #529E0A;
+}
+
+.entry-content a:visited:hover {
+  text-decoration: none;
 }
 
 
