@@ -61,21 +61,16 @@ h2 abbr {
 
 
 .hentry {
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
-p {
-  margin: 4px 0;
+p, .quick {
+  margin: 8px 0 0 0;
   padding: 0;
 }
 
 .entry-content {
   display: inline;
-}
-
-.entry-content > p,
-.quick {
-  text-indent: 1em;
 }
 
 .entry-content p:first-child,
@@ -92,21 +87,16 @@ h3 + p {
   margin-left: 0;
 }
 
+.entry-content > p:first-child + .quick,
+.entry-content > p:first-child + p {
+  margin-top: 8px;
+}
+
 
 address {
   text-align: right;
   margin: 3em 0;
   font-size: 11px;
-}
-
-
-.quick p {
-  display: inline;
-}
-
-.quick p + p:before {
-  content: "\2215";
-  padding: 0 0.75em 0 0.5em;  
 }
 
 
