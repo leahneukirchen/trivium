@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Trivium: ${self[:month]}</title>
+    <link rel="icon" href="trivium.ico">
 $ if self[:entries].first[:prev_by_month]
     <link rel="prev" href="${self[:entries].first[:prev_by_month]}">
 $ end

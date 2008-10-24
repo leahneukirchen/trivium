@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Trivium</title>
+    <link rel="icon" href="trivium.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="alternate" type="application/atom+xml" title="Atom" href="http://chneukirchen.org/trivium/index.atom">
     <link rel="up" href="http://chneukirchen.org/">

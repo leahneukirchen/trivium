@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Trivium: ${self[:title]}</title>
+    <link rel="icon" href="trivium.ico">
 $ if self[:prev_by_date]
     <link rel="prev" href="${self[:prev_by_date]}">
 $ end
