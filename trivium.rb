@@ -1,3 +1,8 @@
+# = Trivium -- a minimalist blogging engine
+#
+# Copyright (C) 2008 Christian Neukirchen <purl.org/net/chneukirchen>
+# Licensed under the terms of the MIT license.
+
 require 'time'; require 'cgi'
 $: << "vendor"
 require 'bluecloth'; require 'rubypants'; require 'htemplate'
