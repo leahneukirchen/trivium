@@ -21,11 +21,11 @@ $ end
 
 <small class="top nav">
 $ if self[:entries].first[:prev_by_month]
-<a class="prev" href="${self[:entries].first[:prev_by_month]}">&#xab; ${Time.parse(self[:entries].first[:prev_by_month]).strftime("%B %Y")}</a>
+<a class="prev" href="${self[:entries].first[:prev_by_month]}">&#xab; ${Time.parse(self[:entries].first[:prev_by_month] + "-01").strftime("%B %Y")}</a>
 $ end
 
 $ if self[:entries].first[:next_by_month]
-<a class="next" href="${self[:entries].first[:next_by_month]}">${Time.parse(self[:entries].first[:next_by_month]).strftime("%B %Y")} &#xbb;</a>
+<a class="next" href="${self[:entries].first[:next_by_month]}">${Time.parse(self[:entries].first[:next_by_month] + "-01").strftime("%B %Y")} &#xbb;</a>
 $ end
 </small>
 
@@ -47,16 +47,16 @@ $ }
 
 <small class="bot nav">
 $ if self[:entries].first[:prev_by_month]
-<a class="prev" href="${self[:entries].first[:prev_by_month]}">&#xab; ${Time.parse(self[:entries].first[:prev_by_month]).strftime("%B %Y")}</a>
+<a class="prev" href="${self[:entries].first[:prev_by_month]}">&#xab; ${Time.parse(self[:entries].first[:prev_by_month] + "-01").strftime("%B %Y")}</a>
 $ end
 
 $ if self[:entries].first[:next_by_month]
-<a class="next" href="${self[:entries].first[:next_by_month]}">${Time.parse(self[:entries].first[:next_by_month]).strftime("%B %Y")} &#xbb;</a>
+<a class="next" href="${self[:entries].first[:next_by_month]}">${Time.parse(self[:entries].first[:next_by_month] + "-01").strftime("%B %Y")} &#xbb;</a>
 $ end
 </small>
 
 <address class="author vcard">
-Copyright &#169; 2008, 2009 <a class="email fn" href="mailto:chneukirchen@gmail.com">Christian Neukirchen</a>
+Copyright &#169; 2008, 2009, 2010 <a class="email fn" href="mailto:chneukirchen@gmail.com">Christian Neukirchen</a>
 </address>
 
 </div>
