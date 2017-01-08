@@ -5,7 +5,7 @@
 	href="http://chneukirchen.org/trivium/" />
   <link rel="self" href="http://chneukirchen.org/trivium/index.atom" />
   <author>
-    <name>Christian Neukirchen</name>
+    <name>Leah Neukirchen</name>
     <uri>http://chneukirchen.org/</uri>
     <email>chneukirchen@gmail.com</email>
   </author>
@@ -13,7 +13,7 @@
   <generator version="2.0">trivium.rb</generator>
   <rights type="xhtml">
   <div xmlns="http://www.w3.org/1999/xhtml">
-  Copyright © 2008-2013 Christian Neukirchen, chneukirchen@gmail.com
+  Copyright © 2008-2017 Leah Neukirchen, chneukirchen@gmail.com
 Verbatim copying is permitted as long as this message is preserved.
   </div>
   </rights>
@@ -22,7 +22,7 @@ $ self[:entries].each { |entry|
   <entry>
     <title>${entry[:title]}</title>
     <author>
-      <name>Christian Neukirchen</name>
+      <name>Leah Neukirchen</name>
       <uri>http://chneukirchen.org/</uri>
       <email>chneukirchen@gmail.com</email>
     </author>
