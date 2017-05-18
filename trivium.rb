@@ -168,5 +168,9 @@ dep "html/index.atom", "template/atom.ht", *d do |dst|
   File.write(dst, template("template/atom.ht",
                            :entries => feed, :time => Time.now))
 end
+dep "html/index.json", "template/json.ht", *d do |dst|
+  File.write(dst, template("template/json.ht",
+                           :entries => feed, :time => Time.now))
+end
 
 system "rsync -r data/ html"

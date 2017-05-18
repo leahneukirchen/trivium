@@ -1,0 +1,23 @@
+$ require 'json'
+$ f = {
+$   "version" => "https://jsonfeed.org/version/1",
+$   "title" => "Trivium",
+$   "home_page_url" => "http://chneukirchen.org/trivium/",
+$   "feed_url" => "http://chneukirchen.org/trivium/index.json",
+$   "favicon" => "http://chneukirchen.org/trivium/trivium.ico",
+$   "author" => {
+$      "name" => "Leah Neukirchen",
+$      "url" => "http://chneukirchen.org/",
+$   },
+$   "items" => self[:entries].map { |entry|
+$      {
+$        "id" => "tag:chneukirchen.org,2008:trivium-#{entry[:id]}",
+$        "url" => "http://chneukirchen.org/trivium/#{entry[:id]}",
+$        "title" => entry[:title],
+$        "date_published" => entry[:date].iso8601,
+$        "date_modified" => entry[:updated].iso8601,
+$        "content_html" => format(entry)
+$      }
+$   }
+$ }
+$:{JSON.pretty_generate f}
