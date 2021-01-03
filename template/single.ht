@@ -12,7 +12,7 @@ $ if self[:next_by_date]
 $ end
     <link rel="up" href="${self[:date].strftime("%Y-%m")}">
     <link rel="stylesheet" href="style.css">
-    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://chneukirchen.org/trivium/index.atom">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="https://leahneukirchen.org/trivium/index.atom">
   </head>
   <body>
 
@@ -44,7 +44,7 @@ $:{format self}
 </div>
 
 <address class="author vcard">
-Copyright &#169; 2008&#8211;2017 <a class="email fn" href="mailto:chneukirchen@gmail.com">Leah Neukirchen</a>
+Copyright &#169; 2008&#8211;2021 <a class="email fn" href="mailto:leah@vuxu.org">Leah Neukirchen</a>
 </address>
 
 </div>

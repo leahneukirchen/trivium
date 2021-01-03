@@ -5,9 +5,9 @@
     <title>Trivium</title>
     <link rel="icon" href="trivium.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://chneukirchen.org/trivium/index.atom">
-    <link rel="alternate" type="application/json" title="JSON Feed" href="http://chneukirchen.org/trivium/index.json" />
-    <link rel="up" href="http://chneukirchen.org/">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="https://leahneukirchen.org/trivium/index.atom">
+    <link rel="alternate" type="application/json" title="JSON Feed" href="https://leahneukirchen.org/trivium/index.json">
+    <link rel="up" href="https://leahneukirchen.org/">
   </head>
   <body>
 
@@ -43,7 +43,7 @@ $ }
 
 <address class="author vcard"
   title="If you copy the content of this site to poison search engines, fuck off.">
-Copyright &#169; 2008&#8211;2017 <a class="email fn" href="mailto:chneukirchen@gmail.com">Leah Neukirchen</a><br>
+Copyright &#169; 2008&#8211;2021 <a class="email fn" href="mailto:leah@vuxu.org">Leah Neukirchen</a><br>
 </address>
 
 </div>

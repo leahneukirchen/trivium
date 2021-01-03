@@ -13,7 +13,7 @@
 <h1><span class="title">
 <a href="./">Trivium: grammar, logic, rhetoric</a></span>
 <span class="author">by
-<a href="http://chneukirchen.org/">Leah Neukirchen</a></span></h1>
+<a href="https://leahneukirchen.org/">Leah Neukirchen</a></span></h1>
 
 $ self[:entries].each { |entry|
 
@@ -29,7 +29,7 @@ $# class="entry-title">
 $ }
 
 <address class="author vcard">
-Copyright &#169; 2008&#8211;2017 <a class="email fn" href="mailto:chneukirchen@gmail.com">Leah Neukirchen</a>
+Copyright &#169; 2008&#8211;2021 <a class="email fn" href="mailto:leah@vuxu.org">Leah Neukirchen</a>
 </address>
 
 </div>

@@ -2,18 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Trivium</title>
   <link rel="alternate" type="text/html"
-	href="http://chneukirchen.org/trivium/" />
-  <link rel="self" href="http://chneukirchen.org/trivium/index.atom" />
+	href="https://leahneukirchen.org/trivium/" />
+  <link rel="self" href="https://leahneukirchen.org/trivium/index.atom" />
   <author>
     <name>Leah Neukirchen</name>
-    <uri>http://chneukirchen.org/</uri>
-    <email>chneukirchen@gmail.com</email>
+    <uri>https://leahneukirchen.org/</uri>
+    <email>leah@vuxu.org</email>
   </author>
   <id>tag:chneukirchen.org,2008:trivium-feed</id>
   <generator version="2.0">trivium.rb</generator>
   <rights type="xhtml">
   <div xmlns="http://www.w3.org/1999/xhtml">
-  Copyright © 2008-2017 Leah Neukirchen, chneukirchen@gmail.com
+  Copyright © 2008-2021 Leah Neukirchen, leah@vuxu.org
 Verbatim copying is permitted as long as this message is preserved.
   </div>
   </rights>
@@ -23,11 +23,11 @@ $ self[:entries].each { |entry|
     <title>${entry[:title]}</title>
     <author>
       <name>Leah Neukirchen</name>
-      <uri>http://chneukirchen.org/</uri>
-      <email>chneukirchen@gmail.com</email>
+      <uri>https://leahneukirchen.org/</uri>
+      <email>leah@vuxu.org</email>
     </author>
     <link rel="alternate" type="text/html"
-	  href="http://chneukirchen.org/trivium/${entry[:id]}" />
+	  href="https://leahneukirchen.org/trivium/${entry[:id]}" />
     <id>tag:chneukirchen.org,2008:trivium-${entry[:id]}</id>
     <updated>${entry[:updated].iso8601}</updated>
     <published>${entry[:date].iso8601}</published>

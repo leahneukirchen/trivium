@@ -24,12 +24,14 @@
 (defun trivium-update-blog ()
   "Update the blog."
   (interactive)
-  (compile "cd .. ; ruby trivium.rb"))
+  (let ((process-connection-type nil))
+    (compile "cd .. ; ruby trivium.rb")))
 
 (defun trivium-upload-blog ()
   "Upload the blog."
   (interactive)
-  (compile "cd .. ; ruby trivium.rb && ./upload"))
+  (let ((process-connection-type nil))
+    (compile "cd .. ; ruby trivium.rb && ./upload")))
 
 (defun trivium-insert-link-markup ()
   "Insert a '.link'."
