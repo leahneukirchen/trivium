@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://leahneukirchen.org/trivium/" >
   <title type="text">Trivium</title>
   <link rel="alternate" type="text/html"
-	href="https://leahneukirchen.org/trivium/" />
+	href="/" />
   <link rel="self" href="https://leahneukirchen.org/trivium/index.atom" />
   <author>
     <name>Leah Neukirchen</name>
